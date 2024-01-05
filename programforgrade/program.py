@@ -12,10 +12,10 @@ for i in range(0,number):
         coding = sequence[0:3]
         stopcodon = sequence[l-3:l]
         if coding == 'ATG' or coding == 'atg':
-            if stopcodon == 'TAA' or stopcodon == 'TTA' or stopcodon =='TGA' or stopcodon == 'taa' or stopcodon == 'tta' or stopcodon =='tga' :
+            if stopcodon == 'TAA' or stopcodon == 'TAG' or stopcodon =='TGA' or stopcodon == 'taa' or stopcodon == 'tag' or stopcodon =='tga' :
                 for a in range(0, len(sequence[l-3:l]), 3): 
                     triplet = sequence[a:a+3]
-                    if triplet != 'TAA' or triplet != 'TTA' or triplet != 'TGA' or triplet != 'taa' or triplet != 'tta' or triplet != 'tga' :
+                    if triplet != 'TAA' or triplet != 'TAG' or triplet != 'TGA' or triplet != 'taa' or triplet != 'tag' or triplet != 'tga' :
                         print('This sequence is a CODING sequence')
                         num += 1
                         break
